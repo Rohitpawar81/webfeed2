@@ -1,0 +1,380 @@
+Practical No. 5
+
+Aim: Study and implementation of identity management
+
+Step1: Click on link below. https://aws.amazon.com/console/
+
+
+
+Step2: Go to “My Account” > “AWS Management Console”
+
+
+
+Step3: Create AWS account (fill the required details)
+
+
+
+
+
+
+
+
+
+
+
+
+NOTE: Do not provide any kind of credit/debit card details or bank details.) Click on next
+
+
+Step 4: Click on My Account, Select AWS Management Console.
+Enter your aws account userid and password click on sign in button
+
+
+
+
+
+Now it will redirect you to home page without asking any other details. Now to we have to add user and group and assign them privileges.
+
+
+Step 5: Go to “My Security Credentials”. Click on “Users”.
+
+
+
+Step6: Click on “Add user”.
+Enter the name for the user. Check the check box in front of “Programmatic access” and “AWS Management Console access”.
+
+
+
+Step7: Scroll down and select “Custom password” and enter the password for the new user and
+Click on “Next: Permissions”. 
+
+
+
+Step8: Next it allow you to create group or you can just pass it. We are going to create group click on
+“Create group”.
+
+
+
+Following window will appear.
+
+
+
+Step9: Give name to group, assign the their permissions and click on “Create group”.
+
+
+
+
+Step10: Your group is created now click on “Next: Tags”.
+
+
+
+Step11: Click on “Next: Review”.
+
+
+
+Step12:  Check the Review for the user and click on “Create user”.
+
+
+
+
+Step13: Click on “Close”.
+
+
+
+
+Step14: Click on “Group”. You will see the group you just created.
+
+
+
+Step15: Now log out of admin account and try to login as user (newly created).
+Navigate to link below. https://aws.amazon.com/console/ 
+Go to “My Account” > “AWS Management Console”.
+
+
+
+
+
+
+It will ask you to change the password which is been set by administrator. You will be redirected to home screen.
+
+
+
+
+
+
+
+Practical No. 6
+Aim: Study Cloud Security Management
+Step1: Go to aws.amazon.com 
+
+
+
+Step2: Click On My Account.
+Step3: Select aws management console and click on it.
+
+
+
+Step4: Create AWS account(fill the required details)
+
+
+
+
+
+
+
+
+
+
+NOTE :- Do not provide any kind of credit/debit card details or bank details.) 
+
+Step5: Click on next (open your gmail check you will get message from amazon).
+Step6: Click on My Account, Select AWS Management Console.
+Step7: Enter your aws account userid and password click on sign in button
+
+
+
+
+
+Step8: Click on Services tab
+
+
+
+Step9: Click on Security, identity & Compliances > Select IAM
+
+
+10: Click on Users from Dashboard
+
+
+
+Step11: Click on Add User and Add the users.
+
+
+
+
+Step12: Goto Select AWS access type check both the rediobutton. And click on next permission
+
+
+
+Step13: Click on Attach Existing Policy Directly. Attach Policy to the users. And press Next Tab.
+
+
+
+
+
+Step14: Click On Create User (Here Users are created.)
+
+
+
+Step15: Now download the .csv file . and click on close.
+
+
+
+Step16: Now Goto Account and select My Security Credential tab > Click on Continue to security credentials .
+
+
+Step17: Click on Multi-factor authentication (MFA)
+
+
+Step18: Click On Active MFA
+
+
+
+Step19: Select Virtual MFA device and Click on Continue tab
+Note: Download Barcode Scanner and Google Authentication App in your Mobile Phone.
+Step20: Scan the QR code and enter the MFA code from ur mobile phone and then click on assign Assign MFA tab
+
+
+
+
+Step21: Now the page look like this.
+
+
+
+Step22: Click On Dashboard Go to Additional Information Select Policy Simulator
+
+
+
+
+Step23: Select The User select services and service action and click on Run Simulator Tab
+
+
+
+Practical No. 7
+Aim: Write a program for web feed
+Steps:
+
+Step1: Open Notepad File Type the following Code and save it as rss.xml extension.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>W3Schools Home Page</title>
+<link>https://www.w3schools.com</link>
+<description>Free web building tutorials</description>
+<item>
+<title>RSS Tutorial</title>
+<link>https://www.w3schools.com/xml/xml_rss.asp</link>
+<description>New RSS tutorial on W3Schools</description>
+</item>
+<item>
+<title>XML Tutorial</title>
+<link>https://www.w3schools.com/xml</link>
+<description>New XML tutorial on W3Schools</description>
+</item>
+</channel>
+</rss>
+
+Step2: Open the software visual studio 2010 Do the following File -> New -> Website-> visual C# -> ASP.NET website -> OK
+
+
+
+
+Step3: Now copy that rss file which was saved with .xml extention inside your website folder.
+
+  
+Step4: Type this in default.aspx <p>here is ur <a href="rss.xml">feed</a>.</p>
+
+Step5: Run the page
+
+Output:
+
+
+
+
+
+
+Practical No. 9
+
+Aim: User Management in Cloud
+
+Steps:
+
+
+Step1: Adding a user on Ubuntu: sudo adduser rjcs
+
+
+
+Step2: To add a system user rjcs run the following command:
+
+
+
+Step3: Login as rjcs user by using following command:
+
+
+
+Step4: Adding a group on Ubuntu
+
+ 
+
+Step5: Adding a User to a group on Ubuntu:
+
+ 
+
+You can login as a rjcs and run the following command.
+
+
+Step6: Removing the user from a group on Ubuntu:
+
+
+
+Step7: Removing a user on Ubuntu:
+
+
+Step8: Deleting a group on Ubuntu:
+
+
+
+Step9: Listing all the users on Ubuntu:
+
+
+
+Step10: Listing all the groups on Ubuntu:
+
+
+Step11: Listing all the user in a group on Ubuntu
+
+
+
+Practical No. 10
+
+Aim: Study and implementation of Role Based Access Control in AWS Cloud
+
+Steps:
+
+Step1: Open your browser and visit the AWS Free Tier Sign-Up page 👉 https://aws.amazon.com/free > Click on "Create an AWS Account".
+
+Step2: Enter Your Details:
+1.Account Information
+2.AWS Account Name [MyCloudLearning]
+3.Choose Account Type
+4.Payment Information
+5.Verify Your Identity
+6.Choose a Support Plan [Free Basic Plan]
+
+Step3: Sign in to AWS Management Console, Once logged in, ensure that you are in the correct AWS region (top-right corner).
+
+
+
+Step4: Type "IAM" and click on IAM under Services > Roles > Create Role 
+
+
+Step5: Select AWS Service & choose EC2 as the trusted entity > Next   [select role type] 
+
+\
+
+Step6: Select the AmazonS3ReadOnlyAccess checkbox >  Next
+
+
+
+Step7: Enter a meaningful role name, [S3_ReadOnly_Role] > Create Role at bottom of page
+
+
+
+You have successfully created an IAM role. Now, you can attach this role to an EC2 instance or other AWS services.
+
+
+
+Step8: In EC2 Dashboard, click on Instances (left side panel) > (blue)Launch Instances.  [Launch EC2 Instance]
+
+
+
+Step9: Configuring EC2 Instance by selecting below things:
+
+1.Name Your Instance under Name and Tags [MyTestEC2]
+2.Scroll down to Application and OS Images (Amazon Machine Image - AMI) > Choose Amazon Linux 2023 (Free Tier eligible)     (will install amazon linux)
+3.Under Instance Type, select t2.micro OR  t3.micro (Free Tier eligible)
+4.Under Key pair (login), click Create new key pair [MyEC2Key] > RSA as (key type) > Create Key Pair and download the .pem file.
+5.Under Network Settings, leave the defaults & make sure Allow SSH traffic is enabled so you can connect to the instance.
+6.Under Configure Storage, keep the default 8 GiB (General Purpose SSD - gp3).
+
+
+Step10: Now, you will attach the IAM role you created (S3_ReadOnly_Role) to the EC2 instance by scroll down to Advanced Details >  IAM Instance Profile (dropdown) > select S3_ReadOnly_Role > Launch Instance
+
+
+Once the instance is launched, verify that the IAM role is attached
+
+Step11: EC2 Dashboard → Click Instances (left panel) > find launched instance > click on it & open its details > In Details tab, look ‘IAM Role field’ it should show S3_ReadOnly_Role 
+
+
+
+If the IAM role is displayed correctly, your EC2 instance has IAM permissions attached successfully.
+Step12: Now, let’s connect the role to the instance and accessing S3:
+1.Under Instance Details, find the Public IPv4 address  and copy it 
+2.Open Command Prompt, run the command “ssh -i your-key.pem ec2-user@your-ec2-public-ip”
+Replace ‘your-key.pem’ → Path to your downloaded key file
+                ‘your-ec2-public-ip’ → The public IPv4 address of your EC2 instance  >  Yes
+
+
+
+Step13: Test S3 Read-Only Access as we are connected to instance, follow below steps:
+1.Run this command to list all S3 buckets in your AWS account [aws s3 ls]  -  It will successfully read the command 
+
+
+Step14: Test S3 Modify Access by creating a new S3 bucket type this command [aws s3 mb s3://my-new-bucket]
+
+
+You should get a permission denied error, confirming that the role only allows read access
+
+
+
+
