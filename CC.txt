@@ -1,0 +1,167 @@
+Practical No. 2
+Aim: Installation and configuration of virtualization using KVM.
+
+Step 1: Download the Ubuntu ISO
+1.Visit the Ubuntu Downloads page: https://ubuntu.com/download/desktop.
+2.Select the latest version of Ubuntu (e.g., Ubuntu 22.04 LTS).
+3.Download the ISO file (e.g., ubuntu-22.04-desktop-amd64.iso).
+Step 2: Create a New Virtual Machine in VMware Workstation Pro
+1.Open VMware Workstation Pro 17.
+2.From the home screen, click on Create a New Virtual Machine.
+3.Select Typical (recommended) and click Next.
+4.Choose Installer disc image file (iso) and browse to the downloaded Ubuntu ISO.
+5.Choose the VM name (e.g., "Ubuntu-KVM") and select a location for the virtual machine.
+6.Set the disk size (e.g., 20 GB or higher) and choose Store virtual disk as a single file.
+7.Finish the wizard by clicking Finish.
+
+Step 3: Power On the Virtual Machine and Install Ubuntu
+1.Once the virtual machine is created, select it in VMware and click Power on.
+2.The Ubuntu installation will begin.
+
+3.Follow the on-screen instructions to complete the Ubuntu installation (Language, Time zone, User setup, etc.).
+
+
+
+
+
+
+4.When the installation is complete, reboot the system.
+Step 4:  KVM Related Packages in Ubuntu
+1.Once Ubuntu is installed, log in to the system.
+
+2.Open a Terminal in Ubuntu and execute the following commands to check if your system supports virtualization:
+sudo grep -c "svm\|vmx" /proc/cpuinfo
+osvm: AMD processors.
+ovmx: Intel processors.
+If the output is greater than 0, your CPU supports virtualization.
+
+3.Install KVM and related packages by running the following commands:
+1.sudo apt update
+
+
+
+2.sudo apt upgrade
+
+Step 4: Verify if KVM virtualization is enabled
+1.sudo apt install cpu-checker
+
+2.kvm-ok
+
+Step 5: Install KVM
+1.sudo apt install qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+
+Step 6 : Enable the virtualization daemon
+1.Sudo systemctl enable –now libvirtd
+2.subo systemctl start libvirtd
+3.subo systemctl status libvirtd
+
+
+Step 7: Add your user to the KVM and libvirt group and kvm group
+	1. sudo adduser sejal libvirt
+	2. sudo adduser sejal kvm
+
+Step 8 : Install the virt-manager
+1.sudo apt install virt-manager
+
+Step 9 : Search the virtual machine or run “virt-manager” command.
+	
+Conclusion:
+You have successfully installed and configured KVM inside a virtual machine on VMware Workstation Pro 17 running Ubuntu. Now, you can create multiple virtual machines using KVM within this virtual environment.
+
+
+
+
+
+Practical No. 3
+Aim: Create and manage virtual machines using KVM.
+Steps to Install Windows OS on KVM
+1. Verify KVM Installation
+1.Ensure KVM is installed and active:
+sudo systemctl status libvirtd
+
+If not active, start the service:
+sudo systemctl start libvirtd
+2.Confirm KVM installation:
+kvm-ok
+
+If it returns "KVM acceleration can be used", KVM is properly installed.
+2. Download Windows ISO
+●Download the required Windows ISO file from the official Microsoft website.
+(https://www.microsoft.com/en-in/software-download/windows10b)
+
+●Save it to a directory accessible from your Ubuntu system, e.g., /home/user/Downloads/windows.iso.
+3. Start Virt-Manager
+1.Open Virt-Manager (Virtual Machine Manager) on your Ubuntu system:
+oRun it from the terminal:
+virt-manager
+oOr search for it in your application menu.
+2.Ensure that the libvirtd service is running to allow Virt-Manager to manage virtual machines.
+
+4. Create a New Virtual Machine
+1.In Virt-Manager:
+oClick File > New Virtual Machine or the + Create a New Virtual Machine button.
+2.Choose the Install method:
+oSelect Local install media (ISO image or CDROM) and click Forward.
+3.Provide the ISO:
+oBrowse to the location of the downloaded Windows ISO (e.g., /home/user/Downloads/windows.iso).
+
+4.Configure the Windows VM:
+oOperating System: Select Microsoft Windows and choose the version (e.g., Windows 10/11).
+oAllocate RAM: At least 4GB (4096 MB).
+oAllocate CPU Cores: At least 2 cores.
+
+5.Create a Virtual Disk:
+oSet the disk size: At least 50GB.
+oEnsure the storage is qcow2 for dynamic allocation.
+6.Name the Virtual Machine:
+oGive a name, e.g., "Windows VM", and confirm the settings.
+
+5. Start the Installation
+1.Click Finish to start the virtual machine.
+2.The VM will boot from the Windows ISO.
+3.Follow the Windows installation process:
+oChoose language, region, and keyboard layout.
+oSelect Custom installation and create a partition on the virtual disk for Windows.
+oComplete the installation process.
+
+
+7. Access and Use Windows
+●Once the installation is complete, you can log in to your Windows VM.
+●Install required software or services in the Windows VM.
+
+This setup successfully demonstrates the deployment of Infrastructure as a Service (IaaS) by enabling multiple operating systems to run on a single host using KVM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical No. 5
+Aim: To study and implement the concept of Storage as a Service (SaaS).
+Steps to Implement Storage as a Service Using Google Drive
+1.Open Google Drive:
+oGo to Google Drive.
+
+2.Create a Folder:
+oClick on the “+ New” button (on the left-hand side).
+oSelect “Folder” from the dropdown menu.
+oProvide a name for the folder (e.g., "Personal") and click Create.
+
+3.Store a File in the Folder:
+oOpen the created folder by clicking on its name.
+oClick on the “+ New” button again, then choose “File upload”.
+
+oBrowse and select a file from your device to upload.
+
+7. Result
+Files and folders were successfully created and stored in Google Drive. The steps demonstrate the concept of Storage as a Service.
+8. Conclusion
+Google Drive provides an efficient solution for data storage and management. It fits well under the SaaS model, offering options to create and manage documents, spreadsheets, and presentations. Its automatic saving feature and sharing capabilities make it a robust tool for cloud storage.
